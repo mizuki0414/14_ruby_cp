@@ -1,5 +1,22 @@
-# Objects
+# モジュールで名前空間を作る
+# - 名前空間
 
-# class (オブジェクトの属性)
+def movie_encode
+end
 
-# method (それに対する処理内容)
+def movie_export
+end
+
+module Movie
+
+    def self.encode
+        puts "encoding..."
+    end
+
+    def self.export
+        puts "exporting..."
+    end
+end
+
+Movie.encode
+Movie.export

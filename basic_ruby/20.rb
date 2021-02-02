@@ -1,5 +1,22 @@
-# Objects
+# アクセサ
+class User
+    attr_accessor :name
+    # getterだけ定義したい場合は、attr_reader :name
+    # setter: name=(value)
+    # getter: name
 
-# class (オブジェクトの属性)
+    def initialize(name)
+        # initializeの中で変数にアクセスする場合には@をつけて
+        @name = name
+    end
 
-# method (それに対する処理内容)
+    def sayHi
+        puts "hi! i am #{@name}"
+    end
+end
+
+tom = User.new("tom")
+tom.name = "tom Jr."
+p tom.name
+
+tom.sayHi

@@ -1,5 +1,13 @@
-# Objects
+# case
+signal = gets.chomp
 
-# class (オブジェクトの属性)
-
-# method (それに対する処理内容)
+case signal
+when "red"
+    puts "stop!"
+when "green", "blue"
+    puts "go!"
+when "yellow"
+    puts "caution!"
+else
+    puts "wrong signal"
+end

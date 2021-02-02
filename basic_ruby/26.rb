@@ -1,5 +1,19 @@
-# Objects
+# 例外処理
+class MyError < StandardError; end
+x = gets.to_i
 
-# class (オブジェクトの属性)
-
-# method (それに対する処理内容)
+begin
+    if x == 3
+        raise MyError
+    end
+    p 100 / x
+rescue MyError
+    puts "not 3!"
+rescue => ex
+    p ex.message
+    p ex.class
+    puts "stopped!"
+# 例外にかかわらず実行したい処理
+ensure
+    puts "--END--"
+end

@@ -1,5 +1,16 @@
-# Objects
+# クラス
+class User
+    def initialize(name)
+        # initializeの中で変数にアクセスする場合には@をつけて
+        @name = name
+    end
 
-# class (オブジェクトの属性)
+    def sayHi
+        puts "hi! i am#{@name}"
+    end
+end
 
-# method (それに対する処理内容)
+tom = User.new("tom")
+tom.sayHi
+tom = User.new("bob")
+tom.sayHi

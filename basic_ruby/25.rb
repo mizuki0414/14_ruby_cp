@@ -1,5 +1,18 @@
-# Objects
+# module
+# - ミックスイン
 
-# class (オブジェクトの属性)
+module Debug
+    def info
+        puts "#{self.class} debug info ..."
+    end
+end
+class Player
+    include Debug
+end
 
-# method (それに対する処理内容)
+class Monster
+    include Debug
+end
+
+Player.new.info
+Monster.new.info

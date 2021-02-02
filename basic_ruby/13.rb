@@ -1,5 +1,16 @@
-# Objects
+# if
+# > < >= <= == !=
+# &&(AND), ||(OR), !(NOT)
 
-# class (オブジェクトの属性)
+score = gets.to_i
 
-# method (それに対する処理内容)
+if score > 80 then
+    puts "great!"
+elsif score > 60
+    puts "good!"
+else
+    puts "so so ..."
+end
+
+# 単純な条件分岐の場合はifの後ろに記載可能
+puts "great!" if score > 80

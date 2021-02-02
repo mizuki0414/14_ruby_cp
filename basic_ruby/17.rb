@@ -1,5 +1,17 @@
-# Objects
+# loop
 
-# class (オブジェクトの属性)
+i = 0
+loop do
+    p i
+    i += 1
+end
 
-# method (それに対する処理内容)
+#break
+#next
+
+10.times do |i|
+    if i == 7 then
+        # breakでループ終了
+        # nextでスキップ
+    end
+end
