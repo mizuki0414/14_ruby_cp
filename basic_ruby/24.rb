@@ -9,6 +9,8 @@ end
 
 module Movie
 
+    VERSION = 1.1
+
     def self.encode
         puts "encoding..."
     end
@@ -20,3 +22,4 @@ end
 
 Movie.encode
 Movie.export
+p Movie::VERSION
