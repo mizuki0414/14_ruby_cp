@@ -16,4 +16,11 @@ class PostsController < ApplicationController
       puts "----------test-----------"
     end
   
+    def new
+
+    end
+
+    def create
+
+    end
   end

@@ -1,5 +1,8 @@
 <%# 処理をあちこちに書かなくてはいけないので慣れないかもしれませんが、このように Controller のほうで Model からデータを引っ張ってきて View に埋め込んでいく、というのが基本となる流れなので覚えておきましょう。 %>
-<h2>My Posts</h2>
+<h2>
+    <%= link_to 'Add New',new_post_path, class: 'header-mmenu'%>
+    My Posts
+</h2>
 <ul>
 <% @posts.each do |post| %>
 <li>
